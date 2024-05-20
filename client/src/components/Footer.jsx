@@ -1,15 +1,13 @@
 /* eslint-disable react/no-unknown-property */
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <footer class="bg-white rounded-lg shadow dark:bg-green-200 m-4">
       <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
-          <a
-            href="https://flowbite.com/"
-            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
-          >
+          <a class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               <span className="text-slate-500">Rent</span>
               <span className="text-green-700">itt.</span>
@@ -17,9 +15,12 @@ export default function Footer() {
           </a>
           <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
-              <a href="#" class="hover:underline me-4 md:me-6 text-slate-700">
+              <Link
+                to="/about"
+                class="hover:underline me-4 md:me-6 text-slate-700"
+              >
                 About
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#" class="hover:underline me-4 md:me-6 text-slate-700">
@@ -32,7 +33,10 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="#" class="hover:underline text-slate-700">
+              <a
+                href="https://www.linkedin.com/in/pritam-ghosh-bbb4ba215"
+                class="hover:underline text-slate-700"
+              >
                 Contact
               </a>
             </li>
